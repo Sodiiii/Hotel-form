@@ -1,0 +1,140 @@
+@import 'src/components/styles/colors';
+
+// Fonts
+
+@mixin font-20 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+@mixin font-16 {
+  font-family: Roboto, serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+// Pages
+
+@mixin page-margins {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@mixin page-container {
+  width: 100%;
+  min-height: 83vh;
+  background: $white;
+  border-radius: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+// Buttons
+
+@mixin buttons-modes-common {
+  background-size: 200%;
+  border: none;
+  transition: .3s;
+  border-radius: 16px;
+}
+
+
+// Breakpoints
+
+@mixin _1700 {
+  @media (max-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin _1600 {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin _1500 {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
+
+@mixin _1400 {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin _1300 {
+  @media (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin _1199 {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin _1099 {
+  @media (max-width: 1099px) {
+    @content;
+  }
+}
+
+@mixin _991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin _768 {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin _640 {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin _575 {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin _480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin _380 {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
+
+@mixin _350 {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 50% 70%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

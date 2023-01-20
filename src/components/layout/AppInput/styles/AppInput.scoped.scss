@@ -1,0 +1,71 @@
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+@import '../../../styles/App';
+
+.app-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  animation: .5s show ease;
+  &__label {
+    font-family: Neue Machina, serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6F767E;
+    &_empty {
+      height: 14px;
+    }
+  }
+  &__with-icon {
+    &_left {
+      padding: 5px 10px 5px 40px !important;
+    }
+    &_right {
+      padding: 5px 40px 5px 10px !important;
+    }
+  }
+  &__input {
+    padding: 5px 15px;
+    font-family: Roboto, serif;
+    max-height: 44px;
+    background: #F8F8F8;
+    border: 1px solid #E3E3E3;
+    border-radius: 14px;
+    font-size: 18px;
+    width: 100%;
+    &_white {
+      background: $white;
+    }
+    &_disabled {
+      color: #b1b1b1;
+    }
+  }
+}
+
+.input {
+  &__error-text {
+    color: $red;
+    font-size: 12px;
+  }
+  &-wrapper {
+    position: relative;
+    display: flex;
+  }
+  &-with-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 4px;
+    height: 30px;
+    width: 30px;
+    top: 3px;
+    &__left {
+      top: 5px;
+      height: 25px;
+      width: 25px;
+      input {
+        padding-left: 40px !important;
+      }
+      left: 4px;
+    }
+  }
+}
